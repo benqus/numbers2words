@@ -1,0 +1,27 @@
+{
+  "name": "numbers-to-words",
+  "version": "1.0.0",
+  "description": "Convert Numbers To Words",
+  "main": "./lib/index.js",
+  "scripts": {
+    "build": "npm test && ./node_modules/.bin/tsc --pretty -p .",
+    "test": "./node_modules/.bin/mocha -r ts-node/register ./test/**/*.spec.ts",
+    "postinstall": "npm run build"
+  },
+  "author": "Bence Kormos <kormos.bence@gmail.com>",
+  "license": "UNLICENSED",
+  "private": true,
+  "bin": {
+    "numbers-to-words": "./bin/numbers-to-words"
+  },
+  "dependencies": {
+    "@types/node": "^14.0.27"
+  },
+  "devDependencies": {
+    "@types/mocha": "^8.0.1",
+    "chai": "^4.2.0",
+    "mocha": "^8.1.1",
+    "ts-node": "^8.10.2",
+    "typescript": "^3.9.7"
+  }
+}
